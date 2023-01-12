@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bear Burgers Order</title>
+    <style>
+
+        table thead {
+            background-color:rgb(255, 200, 99) ;
+        }
+        #th2, #th3 {
+            background-color: rgb(255, 229, 182);
+            text-align: center;
+        }
+        #txt {
+            background-color: rgb(250, 238, 216);
+        }
+        .survey {
+            margin-top: 230px;
+        }
+        .side_pic {
+            float: right;
+        }
+        tr:hover {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-3">Order Here!</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Icons</th>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="th2" colspan="3">Meal</th>
+                        </tr>
+                        <tr class="items">
+                            <td>
+                                <img src="/assets/burf.jpg" alt="burger" class="img-fluid">
+                            </td>
+                            <td>Burger</td>
+                            <td>₱55.00</td>
+                        </tr>
+                        <tr class="items">
+                            <td>
+                                <img src="" alt="chicken" class="img-fluid">
+                            </td>
+                            <td>Fried chicken</td>
+                            <td>₱55.00</td>
+                        </tr>
+                        <tr class="items">
+                            <td>
+                                <img src="/done project/html/burger/assets/spag.jpg" alt="spag">
+                            </td>
+                            <td>Spaghetti</td>
+                            <td>₱55.00</td>
+                        </tr>
+                        <tr class="items">
+                            <td><img src="/done project/html/burger/assets/pizza.jpg" alt="Pizza"></td>
+                            <td>Pizza</td>
+                            <td>₱150.00</td>
+                        </tr>
+                        <tr>
+                            <th id="th3" colspan="3">Drinks</th>
+                        </tr>
+                        <tr class="items">
+                            <td>
+                                <img src="/done project/html/burger/assets/coke.gif" alt="Coke">
+                            </td>
+                            <td>Coke</td>
+                            <td>₱20.00</td>
+                        </tr>
+                        <tr class="items">
+                            <td>
+                                <img src="/done project/html/burger/assets/sprite.jpg" alt="Sprite">
+                            </td>
+                            <td>Sprite</td>
+                            <td>₱20.00</td>
+                        </tr>
+                        <tr class="items">
+                            <td>
+                                <img src="/done project/html/burger/assets/sarsi.jpg" alt="sarsi">
+                            </td>
+                            <td>Sarsi</td>
+                            <td>₱20.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" rowspan="2" id="txt">All items are subject to tax.No refunds.All items are not transferrable</td>
+                            <td class="items">Extra rice-₱20.00</td>
+                        </tr>
+                        <tr class="items">
+                            <td>Condiments-₱20.00</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>
+            <div class="col-lg-4">
+                <img src="https://www.dellacasapasta.com/images/basil-sauce.png" alt="spag" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-black survey">
+        <h1 class="text-light display-3 ms-5">Tell Us What You Think!</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="https://thumbs.dreamstime.com/b/cucumber-burger-ingredients-floating-black-background-isolated-vertical-cucumber-burger-ingredients-floating-bun-cheese-tomato-177814997.jpg" alt="burger">
+            </div>
+            <div class="col-lg-6 text-light">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Name (optional)</label>
+                      <input type="text" class="form-control" id="exampleInputName1" aria-describedby="namelHelp">
+                    <div class="form-group">
+                      <label for="exampleInputProvince1">Province(optional)</label>
+                      <input type="text" class="form-control" id="exampleInputProvince1">
+                    </div>
+                    <div class="form group mt-2">
+                        <p>How many times have you went to our restaurant?</p>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">This is the first time!</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">Second time</label><br>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">Third time or more</label>
+                    </div>
+                    <div class="form group">
+                        <p>How would you rate the food (use the star emoji ⭐)?</p>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">⭐</label>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">⭐⭐</label>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">⭐⭐⭐</label>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="radio">⭐⭐⭐⭐</label>
+                        <input type="radio" id="5" name="5" value="5">
+                        <label for="5">⭐⭐⭐⭐⭐</label>
+                    </div>
+                    <div class="form group">
+                        <p>How would you rate the services (use the ⭐ emoji)?</p>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">⭐</label>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">⭐⭐</label>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">⭐⭐⭐</label>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">⭐⭐⭐⭐</label>
+                        <input type="radio" id="5" name="4" value="5">
+                        <label for="5">⭐⭐⭐⭐⭐</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>  
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
